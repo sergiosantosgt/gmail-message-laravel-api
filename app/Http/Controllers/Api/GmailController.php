@@ -28,7 +28,7 @@ class GmailController extends Controller {
     public function index() {
 
         $user         = "me";
-        $msgLimit     = 100;
+        $msgLimit     = 1000;
         $client       = getClient();
         $service      = getService($client);
         $listMessages = listMessages($service, $user, $msgLimit);
@@ -62,11 +62,11 @@ class GmailController extends Controller {
 
         unset($objClientController, $objMessageController);
 
-        if($clientStore || $messageStore) {
+        if($clientStore > 0 || $messageStore > 0) {
             $msg = $clientStore .  " customers and " . $messageStore . " messages were added!";
             return response($msg, 201);
         } else {
-            $msg = "No clients and no messages added!";
+            $msg = $clientStore .  " customers and " . $messageStore . " messages were added!";
             return response($msg, 400);
         }
     }
