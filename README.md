@@ -21,7 +21,7 @@ php artisan serve
 senha: !234qwer
 Para trocar para outro e-mail é preciso autenticar o novo e-mail nos serviços do Google. Isso pode ser feito executando o comando 
 php quickstart.php no dirétório do projeto
-Após executar o Google irá fornecer uma URL para gerar o token. Após gerar token é preciso voltar no terminal e inserir o novo token. Feito isso você está habilitado a utilizar o Api com o novo e-mail.
+Após executar o Google irá fornecer uma URL para gerar o token. Após gerar token é preciso voltar no terminal e inserir o novo token. Feito isso você está habilitado a utilizar a Api com o novo e-mail.
 
 6. Rotas
 http://localhost:8000/api/gmail/   
