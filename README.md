@@ -10,9 +10,11 @@ CREATE DATABASE `gmail_message_db` /*!40100 COLLATE 'utf8_general_ci' */
 2. Instalar Composer no computador (caso não tenha)
 
 3. Abrir diretório do projeto e executar o comando abaixo no terminal para criar as tabelas do banco de dados.
+
 php artisan migrate 
 
 4. Executar o comando abaixo para executar a API.
+
 php artisan serve
 
 5. Os e-mails estão sendo coletados do e-mail de teste sergiotesteapi@gmail.com
