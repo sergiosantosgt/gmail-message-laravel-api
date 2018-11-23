@@ -28,7 +28,7 @@ class GmailController extends Controller {
     public function index() {
 
         $user         = "me";
-        $msgLimit     = 10;
+        $msgLimit     = 100;
         $client       = getClient();
         $service      = getService($client);
         $listMessages = listMessages($service, $user, $msgLimit);
@@ -44,8 +44,6 @@ class GmailController extends Controller {
         foreach($listMessages as $message) {
             // getting gmail message by id 
             $arrMessage = getMessage($service, $user, $message["id"]);
-
-            print_r($arrMessage);
             
             // store client
             $client   = $objClientController->store($arrMessage);
@@ -60,7 +58,6 @@ class GmailController extends Controller {
                 $store   = $message["store"];
                 if($store) $messageStore++; 
             }
-            
         }
 
         unset($objClientController, $objMessageController);
