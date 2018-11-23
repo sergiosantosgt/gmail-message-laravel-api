@@ -9,6 +9,10 @@ CREATE DATABASE `gmail_message_db` /*!40100 COLLATE 'utf8_general_ci' */
 
 2. Instalar Composer no computador (caso não tenha)
 
+3. Executar o comando abaixo para baixar as dependências do projeto.
+
+composer install
+
 3. Abrir diretório do projeto e executar o comando abaixo no terminal para criar as tabelas do banco de dados.
 
 php artisan migrate 
