@@ -44,7 +44,7 @@ http://localhost:8000/api/client/{id}/message/
 O arquivo responsável pela integração com o gmail está em: app/Integrations/gmail-client.php
 
 9. Gmail Controller
-O Controlador está em: app/Integrations/gmail-client.php
+O Controlador está em: app/Controller/GmailControllet.php
 
 10. Configuration file
 O arquivo de configuração é o .env localizado na raiz do projeto.
